@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Age Confirmation Dialog Box</title>
+</head>
+<body>
+	<script>
+
+		let age = prompt("Please enter your age:");
+
+		
+		if (age >= 25) {
+			let confirmed = confirm("You are 25 years old or up. Are you sure you want to continue?");
+
+			if (confirmed) {
+				alert("Thank you for confirming your age.");
+			} else {
+				alert("You must be 25 years old or up to continue.");
+			}
+		} else {
+			alert("You must be 25 years old or up to continue.");
+		}
+	</script>
+</body>
+</html>
